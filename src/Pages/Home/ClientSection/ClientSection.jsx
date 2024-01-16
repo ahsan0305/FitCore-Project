@@ -8,7 +8,7 @@ const ClientSection = () => {
                 <h2 className="text-5xl bg-gradient-to-r from-green-500 to-[#A1F65E] text-transparent bg-clip-text font-bold mb-16">What Say About Our Clients</h2>
             </div>
 
-            <div className="hero mb-[144px] bg-base-200">
+            <div className="hero mb-[100px] bg-base-100">
                 <div className="hero-content flex-col lg:flex-row">
 
                     <img src="../../../../public/Images/Client_Section.jpg" className="max-w-sm rounded-[2px] shadow-2xl" />

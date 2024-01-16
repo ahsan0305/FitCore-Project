@@ -30,7 +30,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn text-[#72AF43]">Sign In</a>
+                    <a className="btn bg-gradient-to-r from-green-500 to-[#A1F65E] text-transparent bg-clip-text">Sign In</a>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ const Banner = () => {
                         <p className="mb-5 text-[#E8E8E8]">Engaging in regular exercise not only amplifies well-being and fortifies the body but also diminishes the likelihood of injuries thereby optimizing.</p>
                         <div >
                             <button className="btn border-0 text-[#fff] bg-gradient-to-r from-green-500 to-[#A1F65E] text-xl ">Join Now</button>
-                            <a className="text-[#E8E8E8] pl-5"> Watch Video</a>
+                            <a className="text-[#E8E8E8] pl-5"><i className="fa-regular fa-circle-play mr-2"></i> Watch Video</a>
                         </div>
                     </div>
                 </div>
