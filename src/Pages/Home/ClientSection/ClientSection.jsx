@@ -4,8 +4,8 @@ const ClientSection = () => {
     return (
         <div>
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-xl font-bold text-[#fff] tracking-[8px] uppercase mt-32 mb-5"> Testimonials</h2>
-                <h2 className="text-5xl bg-gradient-to-r from-green-500 to-[#A1F65E] text-transparent bg-clip-text font-bold mb-16">What Say About Our Clients</h2>
+                <h2 className="text-xl font-bold text-[#fff] tracking-[8px] uppercase mt-32 mb-5 font-poppins"> Testimonials</h2>
+                <h2 className="text-5xl bg-gradient-to-r from-green-500 to-[#A1F65E] text-transparent bg-clip-text font-bold mb-16 font-montserrat">What Say About Our Clients</h2>
             </div>
 
             <div className="hero mb-[100px] bg-base-100">
