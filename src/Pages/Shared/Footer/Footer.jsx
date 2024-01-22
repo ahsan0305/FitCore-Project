@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <div className="max-w-7xl mx-auto">
-            <footer className="footer p-10 bg-[#1D2229] text-base-content justify-between font-poppins">
+        <div className="w-full lg:max-w-7xl mx-auto px-[8px] lg:px-0">
+            <footer className="footer p-10 bg-[#1D2229] text-[#E8E8E8]  justify-between font-poppins">
 
                 <nav>
                     <img src="../../../../public/Images/Logo.png" alt="" />
@@ -41,12 +41,12 @@ const Footer = () => {
                         Grand Rapids, USA</a>
                 </nav>
             </footer>
-            <footer className="footer px-10 pb-10 py-4 border-t border-[#D8D4D433] bg-[#1D2229] font-poppins text-base-content border-base-300">
+            <footer className="footer mb-18 lg:mb-5 px-10 pb-10 py-4 border-t text-[#E8E8E8] border-[#D8D4D433] bg-[#1D2229] font-poppins border-base-300">
                 <aside className="items-center grid-flow-col">
                     <p>Copyright © 2024 FitCore</p>
                 </aside>
 
-                <nav className="md:place-self-center md:justify-self-end">
+                <nav className="md:place-self-center md:justify-self-end mb-72 lg:mb-10">
                     <p>Terms Of Use | Privacy Policy</p>
                 </nav>
             </footer>
