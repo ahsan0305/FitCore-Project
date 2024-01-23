@@ -2,7 +2,7 @@
 
 const AssetSection = () => {
     return (
-        <div className="bg-[#191919] py-[60px] lg:py-[120px] ">
+        <div className="bg-[#191919] py-[60px] lg:py-[120px] " id="about">
             <div className="max-w-7xl mx-auto px-[20px] lg:px-[0px] ">
                 <div className=" flex flex-col lg:items-center gap-10 lg:gap-16 lg:flex-row">
                         <img src="../../../../public/Images/asset_section.png" className="hidden lg:block lg:w-[630px] rounded-lg shadow-2xl " />

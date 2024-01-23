@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 
     const navItems = <>
-    <li><Link to={"/"}>Home</Link></li>
-    <li><Link to={"/about"}>About</Link></li>
-    <li><Link to={"/classes"}>Classes</Link></li>
-    <li><Link to={"/trainers"}>Trainers</Link></li>
-    <li><Link to={"/pricing"}>Pricing</Link></li>
-    <li><Link to={"/contact"}>Contact</Link></li>
+    <li><Link className="hover:text-[#A1F65E] active:bg-transparent] focus:text-[#a1f65e !important]" to={"/"}>Home</Link></li>
+    <li><Link className="hover:text-[#A1F65E] active:bg-transparent] focus:text-[#a1f65e !important]" to={"#"}>About</Link></li>
+    <li><Link className="hover:text-[#A1F65E] active:bg-transparent] focus:text-[#a1f65e !important]" to={"#"}>Classes</Link></li>
+    <li><Link className="hover:text-[#A1F65E] active:bg-transparent] focus:text-[#a1f65e !important]" to="#">Trainers</Link></li>
+    <li><Link className="hover:text-[#A1F65E] active:bg-transparent] focus:text-[#a1f65e !important]" to="#">Pricing</Link></li>
+    <li><Link className="hover:text-[#A1F65E] active:bg-transparent] focus:text-[#a1f65e !important]" to="#">Contact</Link></li>
     </>
     return (
         <div className="lg:max-w-7xl w-full px-[16px] lg:px-0 mx-auto">

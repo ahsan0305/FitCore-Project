@@ -38,6 +38,9 @@
         font-size: 40px !important;
         color: #A1F65E !important;
       }
+      .active_button{
+        background: red !important;
+      }
       @media  screen and (max-width:768px) {
         .banner{
           background: linear-gradient(#1d232ab3,#1d232aa1) ,url(../../../../public/Images/banner_img.jpg) !important;
@@ -45,6 +48,12 @@
           background-position: center right !important;
         }
       }
+
+
+      :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active).focus, :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active):focus, :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):is(summary):not(.active):focus-visible, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active).focus, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active):focus, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):is(summary):not(.active):focus-visible{
+        color: #a1f65e !important;
+      }
+
         
     </style>
 
@@ -55,6 +64,10 @@
 
     <script>
       
+      function handleActivefun(target){
+        document.querySelector('.defalut__btn').classList.remove('active');
+        alert(target);
+      }
       
   </script>
   </body>

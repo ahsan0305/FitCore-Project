@@ -1,42 +1,44 @@
+import { document } from "postcss";
+import { useState } from "react";
 
 
 
 const PricingSection = () => {
 
+    const [activeBtnTwo, setActiveBtnTwo] = useState(true);
     return (
         <div className="pt-[60px] lg:pt-[120px] bg-[#121212]">
             <div className="max-w-7xl px-[8px] lg:px-0 mx-auto">
                 <h2 className="text-xl font-bold text-[#fff] tracking-[8px] uppercase mb-[10px] lg:mb-[30px] text-center font-poppins">Pricing</h2>
                 <h3 className="text-3xl lg:text-5xl font-montserrat bg-gradient-to-r from-green-500 to-[#A1F65E] text-transparent bg-clip-text font-bold text-center pb-2 mb-[30px] lg:mb-[60px]">Affordable Pricing Plans</h3>
-
-
-                {/* <div className="flex justify-around w-[300px] mx-auto bg-white items-center py-2 rounded-sm">
-                    <button className="btn text-[#EEEEEE] bg-black hover:text-[#121212]">
-                        Billed Monthly
-                    </button>
-                    <span className="text-black bg-[#fff] btn border-0 hover:bg-white hover:text-[#EEE] hover:bg-[#121212]">
-                        Billed Yearly
-                    </span>
-                </div> */}
             </div>
-
 
 
             {/* Card section  */}
             <div>
 
-            <label for="test2">Test</label>
+                
+
+                <div className="flex justify-around w-[300px] mx-auto bg-white items-center py-2 rounded-sm">
+                    <label className={`btn hover:text-[#eee] hover:bg-[#000] ${activeBtnTwo ? "bg-black text-[#eee]" : "text-[#000]"}`} onClick={() => {
+                    setActiveBtnTwo((activeBtnTwo) => !activeBtnTwo);
+
+                }}>
+                        Billed Monthly
+                    </label>
+                    <label  className={`btn hover:text-[#eee] hover:bg-[#000] ${activeBtnTwo ? "text-[#000]" : "bg-black text-[#eee]"}`} onClick={() => {
+                    setActiveBtnTwo((activeBtnTwo) => !activeBtnTwo);
+                }}>
+                        Billed Yearly
+                    </label>
+                </div>
 
                 <div role="tablist" className="tabs tabs-bordered w-full lg:max-w-7xl mx-auto px-[20px] lg:px-[0px]">
 
-
-
-
-                    <input type="radio" name="my_tabs_1" role="tab" className="tab h-[3rem] text-[18px] font-medium  border text-[#EEEEEE] bg-black hover:text-[#EEE] hover:bg-[#121212]" aria-label="Billed Monthly" checked />
-
-
-                    <div role="tabpanel" className="tab-content">
-                        <div className="w-full lg:max-w-7xl mx-auto px-[20px] lg:px-[0px] mt-[80px] pb-[120px] flex flex-col lg:flex-row  gap-0 lg:gap-[5%]  ">
+                    <div role="tabpanel" className={`${activeBtnTwo ? "block" : "hidden"}`} >
+                        <div className="w-full lg:max-w-7xl mx-auto px-[20px]  lg:px-[0px] mt-[80px] pb-[120px] flex flex-col lg:flex-row  gap-0 lg:gap-[5%]  ">
+                            
+                            
                             {/* First card section */}
                             <div className="pricing-card mb-[32px] lg:mb-0 border border-white lg:border-0 p-[68px] w-full lg:w-[30%] space-y-3 lg:space-y-6 text-left custom-paragraph-hover relative overflow-hidden lg:hover:mt-[-40px] hover:bg-[#72AF43] group lg:hover:translate-y-0 transition ease-in duration-300">
                                 <h1 className="text-[20px] font-montserrat font-bold bg-gradient-to-r from-green-500 to-[#A1F65E] text-transparent bg-clip-text group-hover:pt-[22px]">Basic Package</h1>
@@ -52,6 +54,8 @@ const PricingSection = () => {
                                 </div>
                                 <button className=" btn px-[38px] bg-[#FFFFFF] font-medium text-base lg:text-lg rounded text-[#191919] hover:bg-slate-50 hover:hover:bg-gradient-to-r from-green-500 to-[#A1F65E] border-0 hover:text-white font-poppins">Register Now</button>
                             </div>
+
+
                             {/* Second card section */}
                             <div className="pricing-card mb-[32px] lg:mb-0 border border-white lg:border-0 p-[68px] w-full lg:w-[30%] space-y-3 lg:space-y-6 text-left bg-[#72AF43] relative overflow-hidden  lg:mt-[-40px]">
                                 <span className="absolute bg-white w-[200px] font-montserrat right-[-50px] top-[30px] text-center text-black py-2 rotate-45">Best Offer</span>
@@ -68,6 +72,8 @@ const PricingSection = () => {
                                 </div>
                                 <button className=" btn border-0 px-[41px] bg-[#FFFFFF] font-medium text-base lg:text-lg rounded text-[#191919] hover:bg-gradient-to-r from-green-500 to-[#A1F65E] hover:text-white font-poppins">Register Now</button>
                             </div>
+
+
                             {/* third card section */}
                             <div className="pricing-card lg:mb-0  border border-white lg:border-0 p-[68px] w-full lg:w-[30%] space-y-3 lg:space-y-6 text-left custom-paragraph-hover  relative overflow-hidden  lg:hover:mt-[-40px] hover:bg-[#72AF43] group lg:hover:translate-y-0 transition ease-in duration-300">
                                 <h1 className="text-[20px] font-bold bg-gradient-to-r from-green-500 font-montserrat to-[#A1F65E] text-transparent bg-clip-text group-hover:pt-[22px] ">Pro Package</h1>
@@ -86,13 +92,7 @@ const PricingSection = () => {
                         </div>
                     </div>
 
-
-                
-
-                    <input type="radio" id="test2" name="my_tabs_1" role="tab" className="tab h-[3rem] px-[40px] border text-black bg-[#fff] text-[12px] lg:text-[18px] font-medium hover:bg-white hover:text-[#EEE] hover:bg-[#121212]" aria-label="Billed Yearly" checked />
-
-
-                    <div role="tabpanel" className="tab-content">
+                    <div className={`${activeBtnTwo ? "hidden" : "block"}`}>
                         <div className="px-[20px] lg:px-[0px] mt-[80px] pb-[120px] flex flex-col lg:flex-row  gap-0 lg:gap-[5%]  ">
                             {/* First card section */}
                             <div className="pricing-card mb-[32px] lg:mb-0 border border-white lg:border-0 p-[68px] w-full lg:w-[30%] space-y-3 lg:space-y-6 text-left custom-paragraph-hover relative overflow-hidden lg:hover:mt-[-40px] hover:bg-[#72AF43] group lg:hover:translate-y-0 transition ease-in duration-300">
@@ -142,6 +142,7 @@ const PricingSection = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
