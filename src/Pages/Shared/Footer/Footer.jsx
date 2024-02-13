@@ -2,54 +2,69 @@
 
 const Footer = () => {
     return (
-        <div className="w-full lg:max-w-7xl mx-auto px-[8px] lg:px-0">
-            <footer className="footer p-10 bg-[#1D2229] text-[#E8E8E8]  justify-between font-poppins">
+        <div className="w-full lg:max-w-7xl mx-auto px-[20px] lg:px-0">
+            <footer className="footer bg-[#1D2229] text-[#E8E8E8] pb-[40px]  justify-between font-poppins">
 
-                <nav>
-                    <img src="../../../../public/Images/Logo.png" alt="" />
-                    <p>A gym, also known as a fitness center or health <br />
-                        club, is a facility dedicated to physical fitness and <br />
-                        exercise gyms and typically offer a range</p>
-                    <div className="grid grid-flow-col mt-10 gap-4">
-                        <img src="../../../../public/Images/icon/Facebook.svg" alt="" />
-                        <img src="../../../../public/Images/icon/Instagram.svg" alt="" />
-                        <img src="../../../../public/Images/icon/LinkedIn.svg" alt="" />
-                        <img src="../../../../public/Images/icon/Twitter.svg" alt="" />
-                        <img src="../../../../public/Images/icon/YouTube.svg" alt="" />
+               
+                    <nav>
+                        <img src="../../../../public/Images/Logo.png" alt="" />
+                        <p>A gym, also known as a fitness center or health <br />
+                            club, is a facility dedicated to physical fitness and <br />
+                            exercise gyms and typically offer a range</p>
+                        <div className="grid grid-flow-col mt-5 lg:mt-10 gap-4">
+                        <a href="#" className="w-[30px] lg:w-[40px] hover:bg-[#72AF43] custom-icon-hover h-[30px] lg:h-[40px] border border-white hover:border-none flex items-center justify-center rounded-lg bg-transparent">
+                                <i className="fab fa-facebook-f text-[#FFFFFF] text-[20px] "></i>
+                            </a>
+                            <a href="#" className="w-[30px] lg:w-[40px] hover:bg-[#72AF43] custom-icon-hover h-[30px] lg:h-[40px] border border-white hover:border-none flex items-center justify-center  rounded-lg bg-transparent">
+                                <i className="fab fa-twitter text-[#FFFFFF] text-[20px] "></i>
+                            </a>
+                            <a href="#" className="w-[30px] lg:w-[40px] hover:bg-[#72AF43] custom-icon-hover h-[30px] lg:h-[40px] border border-white hover:border-none flex items-center justify-center  rounded-lg bg-transparent">
+                                <i className="fab fa-instagram text-[#FFFFFF] text-[20px] "></i>
+                            </a>
+                            <a href="#" className="w-[30px] lg:w-[40px] hover:bg-[#72AF43] custom-icon-hover h-[30px] lg:h-[40px] border border-white hover:border-none flex items-center justify-center  rounded-lg bg-transparent">
+                                <i className="fab fa-linkedin-in text-[#FFFFFF] text-[20px] "></i>
+                            </a>
+                            <a href="#" className="w-[30px] lg:w-[40px] hover:bg-[#72AF43] custom-icon-hover h-[30px] lg:h-[40px] border border-white hover:border-none flex items-center justify-center  rounded-lg bg-transparent">
+                                <i className="fab fa-youtube text-[#FFFFFF] text-[20px] "></i>
+                            </a>
+                            <a href="#" className="w-[30px] lg:w-[40px] hover:bg-[#72AF43] custom-icon-hover h-[30px] border border-white hover:border-none lg:h-[40px] flex items-center justify-center rounded-lg bg-transparent">
+                                <i className="fab fa-behance text-[#FFFFFF] text-[20px] "></i>
+                            </a>
+                        </div>
+                    </nav>
+                    <nav>
+                        <header className="footer-title text-[#FFFFFF] hover:text-[#A1F65E]">Category</header>
+                        <a className="link link-hover hover:text-[#A1F65E]">Strength Training</a>
+                        <a className="link link-hover hover:text-[#A1F65E]">Body Building</a>
+                        <a className="link link-hover hover:text-[#A1F65E]">Weight Lost</a>
+                        <a className="link link-hover hover:text-[#A1F65E]">Basic Yoga</a>
+                        <a className="link link-hover hover:text-[#A1F65E]">Physical Fitness</a>
+                    </nav>
+                    <nav>
+                        <header className="footer-title text-[#FFFFFF] hover:text-[#A1F65E]">Company</header>
+                        <a className="link link-hover hover:text-[#A1F65E]">About us</a>
+                        <a className="link link-hover hover:text-[#A1F65E]">Classes</a>
+                        <a className="link link-hover hover:text-[#A1F65E]">Trainers</a>
+                        <a className="link link-hover hover:text-[#A1F65E]">Price</a>
+                    </nav>
+                    <nav >
+                        <header className="footer-title  text-[#FFFFFF]  hover:text-[#A1F65E]">Contact Us</header>
+                        <a className="link link-hover flex items-center hover:text-[#A1F65E]"><i className="fa fa-phone mr-2"></i> +1  269-537-1744</a>
+                        <a className="link link-hover flex items-center hover:text-[#A1F65E]"> <i className="fa fa-envelope mr-2"></i>  Info@fitcore.com</a>
+                        <a className="link link-hover flex items-center hover:text-[#A1F65E]"> <i className="fa fa-map-marker mr-2"></i>  3033 Goff Avenue, Michigan, <br />
+                            Grand Rapids, USA</a>
+                    </nav>
+       
+
+            </footer>
+
+            <div className=" border-t-[1px] border-[#D8D4D433]"> 
+                    <div className="flex flex-col-reverse lg:flex-row gap-[20px] justify-center lg:justify-between  pb-[20px] lg:pb-[40px] pt-5"> 
+                    <p className="hover:text-[#A1F65E]">Copyright © 2024 FitCore</p>
+                    <p className="hover:text-[#A1F65E]">CTerms Of Use | Privacy Policy</p>
                     </div>
-                </nav>
-                <nav>
-                    <header className="footer-title text-[#FFFFFF]">Category</header>
-                    <a className="link link-hover">Strength Training</a>
-                    <a className="link link-hover">Body Building</a>
-                    <a className="link link-hover">Weight Lost</a>
-                    <a className="link link-hover">Basic Yoga</a>
-                    <a className="link link-hover">Physical Fitness</a>
-                </nav>
-                <nav>
-                    <header className="footer-title text-[#FFFFFF]">Company</header>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Classes</a>
-                    <a className="link link-hover">Trainers</a>
-                    <a className="link link-hover">Price</a>
-                </nav>
-                <nav>
-                    <header className="footer-title  text-[#FFFFFF]">Contact Us</header>
-                    <a className="link link-hover flex items-center"><i className="fa fa-phone mr-2"></i> +1  269-537-1744</a>
-                    <a className="link link-hover flex items-center"> <i className="fa fa-envelope mr-2"></i>  Info@fitcore.com</a>
-                    <a className="link link-hover flex items-center"> <i className="fa fa-map-marker mr-2"></i>  3033 Goff Avenue, Michigan, <br />
-                        Grand Rapids, USA</a>
-                </nav>
-            </footer>
-            <footer className="footer mb-18 lg:mb-5 px-10 pb-10 py-4 border-t text-[#E8E8E8] border-[#D8D4D433] bg-[#1D2229] font-poppins border-base-300">
-                <aside className="items-center grid-flow-col">
-                    <p>Copyright © 2024 FitCore</p>
-                </aside>
+                </div>
 
-                <nav className="md:place-self-center md:justify-self-end mb-72 lg:mb-10">
-                    <p>Terms Of Use | Privacy Policy</p>
-                </nav>
-            </footer>
         </div>
     );
 };

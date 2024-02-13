@@ -15,8 +15,8 @@ const NavBar = () => {
         <div className="lg:max-w-7xl w-full px-[16px] lg:px-0 mx-auto">
             <div className="navbar bg-[#1D2229]">
                 <div className="navbar-start">
-                    <div className="dropdown mr-2 ">
-                        <div tabIndex={0} role="button" className="btn bg-[#21282f8a] lg:hidden">
+                    <div className="dropdown mr-3">
+                        <div tabIndex={0} role="button" className="btn bg-[#1D2229] border-0  lg:hidden 2xl:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5  text-[#FFFFFF]" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
